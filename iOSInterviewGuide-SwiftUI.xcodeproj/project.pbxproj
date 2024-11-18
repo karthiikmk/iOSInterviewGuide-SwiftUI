@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2540C1002CEB851100CC98EE /* CoreKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2540C0FF2CEB851100CC98EE /* CoreKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		2540C0EC2CEB84BC00CC98EE /* iOSInterviewGuide-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSInterviewGuide-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2540C1002CEB851100CC98EE /* CoreKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "iOSInterviewGuide-SwiftUI";
 			packageProductDependencies = (
+				2540C0FF2CEB851100CC98EE /* CoreKit */,
 			);
 			productName = "iOSInterviewGuide-SwiftUI";
 			productReference = 2540C0EC2CEB84BC00CC98EE /* iOSInterviewGuide-SwiftUI.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 2540C0E32CEB84BC00CC98EE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2540C0FE2CEB851100CC98EE /* XCRemoteSwiftPackageReference "OpenSourceCoreKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2540C0ED2CEB84BC00CC98EE /* Products */;
 			projectDirPath = "";
@@ -335,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2540C0FE2CEB851100CC98EE /* XCRemoteSwiftPackageReference "OpenSourceCoreKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/karthikAdaptavant/OpenSourceCoreKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2540C0FF2CEB851100CC98EE /* CoreKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2540C0FE2CEB851100CC98EE /* XCRemoteSwiftPackageReference "OpenSourceCoreKit" */;
+			productName = CoreKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2540C0E42CEB84BC00CC98EE /* Project object */;
 }
